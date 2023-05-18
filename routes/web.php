@@ -18,3 +18,4 @@ Route::get('/', function () {
 });
 
 Route::get('test', [\App\Http\Controllers\ParseRozetkaController::class, 'index'])->name('test');
+Route::get('products', [\App\Http\Controllers\ProductController::class, 'index'])->name('products');
