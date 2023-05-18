@@ -24,6 +24,7 @@ class ParseRozetkaController extends Controller
         $requestItems = $client->get("https://xl-catalog-api.rozetka.com.ua/v4/goods/getDetails?front-type=xl&country=UA&lang=ru&with_groups=1&with_docket=1&goods_group_href=1&product_ids=$myIdItems");
         $responseItems = json_decode($requestItems->getBody()->getContents(), true);
 
+        //Тут находиться характеристики   товара
         //      dd($responseItems);
 //        foreach ($responseItems['data'] as $item) {
 //            $docket = $item['docket'];
